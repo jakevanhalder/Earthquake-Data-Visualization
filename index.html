@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Earthquake Data Visualization</title>
+        
+        <!--Leaflet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+        <!--css-->
+        <link rel="stylesheet" href="styles.css">
+
+        <!--Script Javascript-->
+        <script src="script.js" defer></script>
+
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+        <!--meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="primary-header">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <nav class="primary-navigation" id="primary-navigation">
+                        <ul aria-label="navigation" role="list" class="nav-list"> 
+                            <li><a href="./index.html">Home</a></li>
+                        </ul>
+                    </nav>           
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="padding-block-400">
+                <div id="map" style="height: 500px;"></div>
+                <div id="controls">
+                    <p>stuff</p>
+                </div>
+            </section>
+        </main>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
