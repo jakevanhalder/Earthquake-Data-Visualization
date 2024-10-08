@@ -1,9 +1,17 @@
 // Initialize the map, centered globally
-var map = L.map('map').setView([20, 0], 2);
+var map = L.map('map', {
+    center: [20, 0], // Centered around the equator
+    zoom: 3, // Global view
+    minZoom: 3,
+    maxZoom: 10,
+    maxBounds: [[-85, -180], [85, 180]], // Limit the bounds to the visible world
+    maxBoundsViscosity: 1.0, // Restrict movement outside the bounds
+});
 
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
+    minZoom: 3,
+    maxZoom: 10,
 }).addTo(map);
 
 // Fetch Earthquake Data from USGS API

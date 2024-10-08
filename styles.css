@@ -1,9 +1,9 @@
 :root {
     /*Website colors*/
-    --clr-primary-100: #F2F2F2;
-    --clr-primary-400: #c5b7e4;
-    --clr-primary-800: #aaa;
-    --clr-primary-900: #0D0D0D;
+    --clr-primary-100: #FFF;
+    --clr-primary-400: #D9CCB4;
+    --clr-primary-800: #3A6D8C;
+    --clr-primary-900: #1E3040;
 
     /*Fonts*/
     --ff-primary: 'Inter', sans-serif;
@@ -127,12 +127,14 @@ body {
 
 .primary-header {
     padding-top: var(--size-500);
+    background-color: var(--clr-primary-800);
 }
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .mobile-nav-toggle {
@@ -151,7 +153,7 @@ body {
 
 .nav-list a {
     text-decoration: none;
-    color: var(--clr-primary-900);
+    color: var(--clr-primary-100);
 }
 
 .nav-list a:hover,
@@ -173,7 +175,7 @@ body {
         inset: 8rem var(--size-400) auto;
         max-width: 25rem;
         margin-inline: auto;
-        background-color: var(--clr-primary-100);
+        background-color: var(--clr-primary-900);
         border-radius: var(--size-100);
         box-shadow: 0 0 .75em rgb(0, 0, 0.05);
     }
@@ -236,7 +238,7 @@ body {
 /* Leaflet map */
 
 #map {
-    height: 500px;
+    height: 550px;
     width: 100%;
 }
 
